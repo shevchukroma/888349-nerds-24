@@ -22,47 +22,41 @@
         </ul>
     </nav>
     <main class="container"> 
-            <form action="https://echo.htmlacademy.ru" method="get" class="grid">
-                <p><b>Сетка:</b></p>
-                <input name="grid" type="radio" id="adaptive" checked>
-                <label for="adaptive">Адапнивная</label>
-                <input name="grid" type="radio" id="fixed">
-                <label for="fixed">Фиксированная</label>
-                <input name="grid" type="radio" id="rubber">
-                <label for="rubber">Резиновая</label>
-            </form>
-            <form action="https://echo.htmlacademy.ru" method="get" class="features">
-                <p><b>С какими операционными системами вы знакомы?</b></p>                
-                <input type="checkbox" id="slider" checked>
-                <label for="slider">Слайдер</label>
-                <input type="checkbox" id="block">
-                <label for="block">Блок преимуществ</label>
-                <input type="checkbox" id="news" checked>
-                <label for="news">Новости</label>
-                <input type="checkbox" id="gallery">
-                <label for="gallery">Галерея</label>
-                <input type="checkbox" id="backet">
-                <label for="backet">Корзина</label>             
-            </form>
-            <button>Показать</button>
-        <article>           
-            <div class="catalog">
-                <ul>
-                    <li><a href="sedona.com"><img src="img/img-sedona.jpg" alt="sedona"></a></li>
-                    <li><a href="pink.com"><img src="img/img-pink.jpg" alt="pink"></a></li>
-                    <li><a href="borodinski.com"><img src="img/img-barbershop.jpg" alt="borodinski"></a></li>
-                    <li><a href="mishka.com"><img src="img/img-mishka.jpg" alt="mishka"></a></li>
-                    <li><a href="aplus.com"><img src="img/img-aplus.jpg" alt="aplus"></a></li>
-                    <li><a href="kvast.com"><img src="img/img-kvast.jpg" alt="kvast"></a></li>
-                </ul>
-            </div>
-        </article>
+        <form action="https://echo.htmlacademy.ru" method="get" class="grid">
+            <p><b>Сетка:</b></p>
+            <input name="grid" type="radio" id="adaptive" value="adaptive" checked>
+            <label for="adaptive">Адапнивная</label>
+            <input name="grid" type="radio" id="fixed" value="fixed">
+            <label for="fixed">Фиксированная</label>
+            <input name="grid" type="radio" id="rubber" value="rubber">
+            <label for="rubber">Резиновая</label>
+            <p><b>Особенности:</b></p>                
+            <input type="checkbox" id="slider" value="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" id="block" value="block">
+            <label for="block">Блок преимуществ</label>
+            <input type="checkbox" id="news" value="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" id="gallery" value="gallery">
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" id="backet" value="backet">
+            <label for="backet">Корзина</label>       
+            <button class="show" type="submit">Показать</button>      
+        </form>        
+            <ul class="catalog">
+                <li class="catalog-item"><a href="sedona.com"><img src="img/img-sedona.jpg" alt="sedona"></a></li>
+                <li class="catalog-item"><a href="pink.com"><img src="img/img-pink.jpg" alt="pink"></a></li>
+                <li class="catalog-item"><a href="borodinski.com"><img src="img/img-barbershop.jpg" alt="borodinski"></a></li>
+                <li class="catalog-item"><a href="mishka.com"><img src="img/img-mishka.jpg" alt="mishka"></a></li>
+                <li class="catalog-item"><a href="aplus.com"><img src="img/img-aplus.jpg" alt="aplus"></a></li>
+                <li class="catalog-item"><a href="kvast.com"><img src="img/img-kvast.jpg" alt="kvast"></a></li>
+            </ul>
         <form action="https://echo.htmlacademy.ru" method="get" class="white-us">
             <h2>Напишите нам</h2>
             <label for="name-field">Ваше имя:</label>
-            <input id="name-field"></input>
+            <input id="name-field">
             <label for="e-mail-field">Ваш e-mail:</label>
-            <input id="e-mail-field"></input><br>
+            <input id="e-mail-field">
             <label for="text-field">Текст письма:</label>
             <textarea id="text-field"></textarea>
             <input type="submit" value="Отправить">
@@ -72,9 +66,9 @@
     <footer class="basement">       
         <div class="social">
             <div class="links">
-                <a href="https://vk.com"><img src="img/vk-icon.png" alt="vk"></a>
-                <a href="https://facebook.com"><img src="img/fb-icon.png" alt="facebook"></a>            
-                <a href="https://instagram.com"><img src="img/insta-icon.png" alt="instagram"></a>
+                <a href="https://vk.com"><img src="img/vk-icon.svg" alt="vk"></a>
+                <a href="https://facebook.com"><img src="img/fb-icon.svg" alt="facebook"></a>            
+                <a href="https://instagram.com"><img src="img/insta-icon.svg" alt="instagram"></a>
             </div>
             <div class="friends">
                 <h3>Давайте дружить, это выгодно!</h3>
