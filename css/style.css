@@ -9,8 +9,21 @@ p, h1, h2, h3, h4, ul, li {
     margin: 0;
 }
 
+.main-header {
+    background-color: #eee;
+}
+
+.main-header-logo {
+    margin: 50px 20px;
+}
+
 .main-navigator {
-    background: #ededed;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .main-navigator a {    
@@ -22,6 +35,25 @@ p, h1, h2, h3, h4, ul, li {
 .main-navigator h2 {
     font-size: 55px;
     line-height: 55px;
+    width: 100%;
+    margin: 22px 0 112px 0;
+}
+
+.site-navigator {
+    display: flex;
+}
+
+.site-navigator li {
+    margin: 77px 24px;
+}
+
+.user-navigator {
+    display: flex;
+    margin: 77px 20px;
+}
+
+.user-navigator img {
+    margin-right: 25px;
 }
 
 li {
@@ -50,6 +82,27 @@ a {
     padding: 15px;
 }
 
+.offers {
+    width: 1200px;
+    margin: 80px auto; 
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 80px 0 20px;
+}
+
+.offer-item {
+    width: 300px;
+}
+
+.offer-item h3 {
+    margin: 25px 0;
+}
+
+.offer-item a {
+    margin-top: 32px;
+}
+
 .offer-item p {
     line-height: 24px;
 }
@@ -66,6 +119,54 @@ a {
     background-color: #e4c755;
 }
 
+.grid {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid p {    
+    margin: 50px 0 20px 0;
+}
+
+.grid label {
+    position: relative;
+    left: 30px;
+    top: -17px;
+}
+
+.grid button {
+    margin-top: 40px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.catalog li {
+    margin-bottom: 33px;
+}
+
+.white-us {
+    display: none;
+}
+
+.social {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 70px 20px;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+}
+
 .links a {
     display: inline-block;
     height: 80px;
@@ -75,15 +176,24 @@ a {
     text-align: center;
     padding-top: 30px;
     box-sizing: border-box;
+    margin-right: 12px;
 }
 
 .friends h3 {
     font-size: 36px;
     font-weight: bold;
+    margin: 10px 235px 12px 0;
 }
 
 .friends p {
     font-size: 16px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container p { 
