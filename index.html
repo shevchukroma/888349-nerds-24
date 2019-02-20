@@ -13,14 +13,14 @@
                 <img src="img/nerds-logo.png" alt="LOGO" width="160" height="65">
             </a>
             <ul class="site-navigator">
-                <li><a href="studio.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="nerds-catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li class="navigation-current"><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
             <ul class="user-navigator">
                 <li><img src="img/cart-icon.png" alt="Корзина" width="15" height="15"></li>
-                <li><a href="backet.html" class="backet">Корзина</a></li>
+                <li><a href="#" class="backet">Корзина</a></li>
             </ul>
         </nav>
     </header>
@@ -30,39 +30,47 @@
                 <img src="img/illustration-1.jpg" alt="webSite" width="300" height="146">
                 <h3>Веб-сайты</h3>
                 <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                <a href="" class="btn btn-red">Заказать</a>                
+                <a href="#" class="btn btn-red">Заказать</a>                
             </li>
             <li class="offer-item">
                 <img src="img/illustration-2.jpg" alt="application" width="300" height="146">
                 <h3>Приложения</h3>
                 <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                <a href="" class="btn btn-green">Заказать</a>
+                <a href="#" class="btn btn-green">Заказать</a>
             </li>
             <li class="offer-item">
                 <img src="img/illustration-3.jpg" alt="presentation" width="300" height="146">
                 <h3>Презентации</h3>
                 <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                <a href="" class="btn btn-yellow">Заказать</a>
+                <a href="#" class="btn btn-yellow">Заказать</a>
             </li>
         </ul>
-        <form action="https://echo.htmlacademy.ru" method="get" class="white-us">
-            <h2>Напишите нам</h2>
-            <label for="name-field">Ваше имя:</label>
-            <input id="name-field">
-            <label for="e-mail-field">Ваш e-mail:</label>
-            <input id="e-mail-field">
-            <label for="text-field">Текст письма:</label>
-            <textarea id="text-field"></textarea>
-            <input type="submit" value="Отправить">
-            <button class="modal-close">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" method="get" class="write-us">
+            <div class="write-us-content">
+                <h2>Напишите нам</h2>
+                <div class="name">
+                    <div class="name-item">
+                        <label for="name-field">Ваше имя:</label><br>
+                        <input id="name-field" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="name-item">
+                        <label for="e-mail-field">Ваш e-mail:</label><br>
+                        <input id="e-mail-field" placeholder="email@example.com">                         
+                    </div>             
+                </div>
+                <label for="text-field">Текст письма:</label>
+                <textarea id="text-field" placeholder="В свободной форме"></textarea>
+                <button type="submit" value="Отправить">Отправить</button>
+                <button class="modal-close">Закрыть</button>
+            </div>
         </form>
     </main>
     <footer class="basement">       
         <div class="social">
             <ul class="links">
-                <li><a href="https://vk.com"><img src="img/vk-icon.png" alt="vk" width="26" height="15"></a></li>
-                <li><a href="https://facebook.com"><img src="img/fb-icon.png" alt="facebook" width="12" height="22"></a></li>
-                <li><a href="https://instagram.com"><img src="img/insta-icon.png" alt="instagram" width="21" height="21"></a></li>
+                <li class="links-item"><a href="#"><img src="img/vk-icon.png" alt="vk" width="26" height="15"></a></li>
+                <li class="links-item"><a href="#"><img src="img/fb-icon.png" alt="facebook" width="12" height="22"></a></li>
+                <li class="links-item"><a href="#"><img src="img/insta-icon.png" alt="instagram" width="21" height="21"></a></li>
             </ul>
             <div class="friends">
                 <h3>Давайте дружить, это выгодно!</h3>
