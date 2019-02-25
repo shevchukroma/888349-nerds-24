@@ -26,27 +26,65 @@
     </header>
     <main class="container"> 
         <form action="https://echo.htmlacademy.ru" method="get" class="grid">
+            <p class="send">Стоимость:</p>
+            <div class="range">
+                <input type="range" min="0" max="15000" value="10000">
+                <div class="price">
+                    <p>От</p>
+                    <input type="text">
+                    <p>До</p>
+                    <input type="text">
+                </div>
+            </div>
             <p class="send">Сетка:</p>
-            <input name="grid" type="radio" id="adaptive" value="adaptive" checked>
-            <label for="adaptive">Адапнивная</label>
-            <input name="grid" type="radio" id="fixed" value="fixed">
-            <label for="fixed">Фиксированная</label>
-            <input name="grid" type="radio" id="rubber" value="rubber">
-            <label for="rubber">Резиновая</label>
-            <p class="send">Особенности:</p>                
-            <input type="checkbox" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" id="block" value="block">
-            <label for="block">Блок преимуществ</label>
-            <input type="checkbox" id="news" value="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" id="gallery" value="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" id="backet" value="backet">
-            <label for="backet">Корзина</label>       
+            <div class="snood">
+                <input name="grid" type="radio" id="adaptive" value="adaptive" checked>
+                <label for="adaptive" class="radio">Адапнивная</label>
+            </div>
+            <div class="snood">
+                <input name="grid" type="radio" id="fixed" value="fixed">
+                <label for="fixed" class="radio">Фиксированная</label>
+            </div>
+            <div class="snood">
+                <input name="grid" type="radio" id="rubber" value="rubber">
+                <label for="rubber" class="radio">Резиновая</label>
+            </div>
+            <p class="send">Особенности:</p>    
+            <div class="ch-box">
+                <input type="checkbox" id="slider" value="slider" checked>
+                <label for="slider" class="check">Слайдер</label>
+            </div>     
+            <div class="ch-box">
+                <input type="checkbox" id="block" value="block">
+                <label for="block" class="check">Блок преимуществ</label>
+            </div>            
+            <div class="ch-box">      
+                <input type="checkbox" id="news" value="news" checked>
+                <label for="news" class="check">Новости</label>
+            </div>      
+            <div class="ch-box">
+                <input type="checkbox" id="gallery" value="gallery">
+                <label for="gallery" class="check">Галерея</label>
+            </div>            
+            <div class="ch-box">
+                <input type="checkbox" id="backet" value="backet">
+                <label for="backet" class="check">Корзина</label>     
+            </div>              
             <button class="show" type="submit">Показать</button>      
         </form>        
         <ul class="catalog">
+            <li class="sorting">
+                <form action="https://echo.htmlacademy.ru" method="get" class="sorting-item">
+                    <p class="send">Сортировать:</p>
+                    <ul class="select">
+                        <li><button>По цене</button></li>
+                        <li><button>По типу</button></li>
+                        <li><button>По названию</button></li>
+                        <li><button class="down"></button></li>
+                        <li><button class="up"></button></li>
+                    </ul>
+                </form>
+            </li>
             <li class="catalog-item">
                 <a href="#">
                     <div class="catalog-item-brows"></div>
@@ -146,6 +184,24 @@
             <button class="modal-close">Закрыть</button>
         </div>
     </form>
+    <div class="selector-pages">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Следующая</button>
+    </div>
+    <div class="map">
+            <img src="img/map.jpg" alt="map" width="1440" height="416">
+            <div class="marker"></div>
+            <div class="adress">
+                <div class="adress-content">
+                    <p>NЁRDS DESIGN STUDIO</p>
+                    <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <button>Напишите нам</button>
+                </div>
+            </div>
+        </div>
     <footer class="basement">       
         <div class="social">
             <ul class="links">
