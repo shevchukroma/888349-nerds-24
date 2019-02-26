@@ -250,11 +250,12 @@ a {
 
 .offers {
     width: 1200px;
-    margin: 80px auto; 
+    margin: 80px auto 40px auto; 
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 80px 0 20px;
+    padding: 0 80px 80px 20px;
+    background: url("../img/separator.png") no-repeat 50% 100%;
 }
 
 .offer-item {
@@ -326,12 +327,6 @@ a {
     background: white;
 }
 
-.separator {
-    width: 1160px;
-    margin: 0 auto 40px auto;
-    display: flex;
-}
-
 .about-us {
     width: 1200px;
     display: flex;
@@ -339,6 +334,8 @@ a {
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
+    background: url("../img/separator.png") no-repeat 50% 100%;
+    margin-bottom: 40px;
 }
 
 .about-description {
@@ -686,7 +683,8 @@ a {
 
 .partners {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto; 
+    background: url("../img/separator.png") no-repeat 50% 100%;
 }
 
 .partners ul {    
@@ -944,27 +942,29 @@ a {
 
 .map {
     width: 1440px;
+    height: 416px;
     margin: 0 auto;
-    position: relative;
     margin-top: 80px;
+    position: relative;
 }
 
-.marker {
-    width: 231px;
-    height: 190px;
-    background: url("../img/map-marker.png") no-repeat 50% 50%;
-    position: absolute;
-    top: 90px;
-    left: 820px;
-}
-
-.adress {
-    width: 300px;
+.adress-content {
+    width: 320px;
     height: 308px;    
     background: white;
     position: absolute;
     left: 140px;
     top: 54px;
+    padding: 0 50px;
+}
+
+.marker {
+    width: 231px;
+    height: 190px;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    background: url("../img/map-marker.png") no-repeat 50% 50%;
 }
 
 .adress-content {
