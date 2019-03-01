@@ -172,7 +172,7 @@ input[type="radio"] {
     font-size: 16px;
     text-transform: uppercase;
     color: white;
-    background: #db575a;
+    background: #fb565a;
     border-radius: 2px;
     border: none;
     cursor: pointer;
@@ -641,7 +641,7 @@ a {
 
 .catalog-item-content p {
     color: #6f6f6f;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: normal;
     text-transform: none;
@@ -711,9 +711,46 @@ a {
 .write-us {
     width: 960px;
     height: 590px;
-    margin: 0 auto;
     box-shadow: 0 10px 20px black;
     display: none;
+    z-index: 5;
+    position: absolute;
+    left: 240px;
+    top: -140px;
+    background-color: white;
+}
+
+@keyframes bounce {
+    0% {transform: translateX(-2000px);  }
+    70% {transform: translateX(30px);    }
+    80% {transform: translateX(-20px);   }
+    90% {transform: translateX(10px);    }
+    100% {transform: translateX(0);      }
+}
+
+@keyframes shake {
+    0% {transform: translate(X0);        }
+    10% {transform: translateX(10px);    }   
+    20% {transform: translateX(-10px);   }
+    30% {transform: translateX(10px);    }   
+    40% {transform: translateX(-10px);   }
+    50% {transform: translateX(10px);    }
+    60% {transform: translateX(-10px);   }
+    70% {transform: translateX(10px);    }
+    80% {transform: translateX(-10px);   }
+    90% {transform: translateX(10px);    }
+    100% {transform: translateX(0);      }    
+}
+
+.modal-show {
+    display: flex;
+    animation-name: bounce;
+    animation-duration: 0.8s;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.8s;
 }
 
 .write-us-content {
@@ -739,6 +776,7 @@ a {
     box-sizing: border-box;
     border-radius: 2px;
 }
+
 
 .write-us-content input:hover,
 .write-us-content textarea:hover {
@@ -962,6 +1000,7 @@ a {
     margin: 0 auto;
     margin-top: 80px;
     position: relative;
+    display: flex;
 }
 
 .adress-content {
