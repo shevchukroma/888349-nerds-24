@@ -9,19 +9,18 @@
 <body>
     <header class="main-header">
         <nav class="main-navigator">
-            <a class="main-header-logo" href="#">
-                <img src="img/nerds-logo.png" alt="LOGO" width="160" height="65">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/nerds-logo.svg" alt="LOGO" width="160" height="65">
             </a>
             <ul class="site-navigator">
                 <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <ul class="user-navigator">
-                <li><img src="img/cart-icon.png" alt="Корзина" width="15" height="15"></li>
-                <li><a href="#" class="backet">Корзина</a></li>
-            </ul>
+            <div class="user-navigator">
+                <a href="#" class="backet">Корзина</a>
+            </div>
         </nav>
         <div class="slider">            
             <input id="slide1" name="slide" type="radio" value="first" checked>
@@ -30,11 +29,10 @@
             <div class="sliders">
                 <div class="slide slide1">
                     <div class="slide-description">
-                        <p class="slide-title">Долго, дорого, скурпулезно.</p>
+                        <p class="slide-title">Долго, дорого, скрупулезно.</p>
                         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                         <button>Узнать больше</button>
                     </div>                
-                    <img src="img/slide1.png" alt="phone" width="698" height="413">
                 </div>
                 <div class="slide slide2">
                     <div class="slide-description">
@@ -42,7 +40,6 @@
                         <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
                         <button>Узнать больше</button>
                     </div>                
-                    <img src="img/slide2.png" alt="phone" width="663" height="430">
                 </div>
                 <div class="slide slide3">
                     <div class="slide-description">
@@ -50,7 +47,6 @@
                         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                         <button>Узнать больше</button>
                     </div>                
-                    <img src="img/slide3.png" alt="phone" width="759" height="411">
                 </div>
             </div>
             <div class="slider-control">
@@ -83,7 +79,7 @@
         </ul>
         <article class="about-us">
             <div class="about-description">
-                <h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
+                <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                 <p>Выполняем заказы на разработку:</p>
                 <ul>
@@ -94,7 +90,7 @@
             </div>
             <div class="about-logo">
                 <img src="img/nerds-logo.jpg" alt="nerds-logo" width="360" height="208">
-                <p class="since">С 2004 года любим точность во всем</p>
+                <p class="since">С 2004 года любим точность во всем:</p>
                 <div class="percent">
                     <div class="percent-item">
                         <p class="count">146<sup>%</sup></p>
@@ -113,8 +109,8 @@
         </article>        
         <div class="partners">
             <ul>
-                <li><a href="#" class="html"><img src="img/html-academy.png" alt="html" width="199" height="68"></a></li>
-                <li><a href="#" class="borodinski"><img src="img/borodinski.png" alt="borodinski" width="209" height="87"></a></li>
+                <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="html"><img src="img/html.png" alt="html" width="199" height="68"></a></li>
+                <li><a href="#" class="borodinski"><img src="img/borod.png" alt="borodinski" width="209" height="87"></a></li>
                 <li><a href="#" class="pink"><img src="img/pink.png" alt="pink" width="185" height="52"></a></li>
                 <li><a href="#" class="mishka"><img src="img/mishka.png" alt="mishka" width="173" height="84"></a></li>
             </ul>
@@ -125,18 +121,18 @@
                     <h2>Напишите нам</h2>
                     <div class="name">
                         <div class="name-item">
-                            <label for="name-field">Ваше имя:</label><br>
+                            <label for="name-field">Ваше имя:</label>
                             <input id="name-field" placeholder="Имя Фамилия">
                         </div>
                         <div class="name-item">
-                            <label for="e-mail-field">Ваш e-mail:</label><br>
+                            <label for="e-mail-field">Ваш e-mail:</label>
                             <input id="e-mail-field" placeholder="email@example.com">                         
                         </div>             
                     </div>
                     <label for="text-field">Текст письма:</label>
                     <textarea id="text-field" placeholder="В свободной форме"></textarea>
                     <button type="submit" value="Отправить">Отправить</button>
-                    <button class="modal-close">Закрыть</button>
+                    <a type="submit" class="modal-close">Закрыть</a>
             </div>
             </form>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5866108211553!2d30.322332703446513!3d59.93900147851415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1551208869256" width="1440" height="416" style="border:0" allowfullscreen></iframe>
@@ -145,16 +141,16 @@
                 <p>NЁRDS DESIGN STUDIO</p>
                 <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
-                <button class="link-on">Напишите нам</button>
-        </div>                
-    </div>
+                <a type="submit" class="link-on">Напишите нам</a>
+            </div>                
+        </div>
     </main>
     <footer class="basement">       
         <div class="social">
             <ul class="links">
-                <li class="links-item"><a href="#"><img src="img/vk-icon.png" alt="vk" width="26" height="15"></a></li>
-                <li class="links-item"><a href="#"><img src="img/fb-icon.png" alt="facebook" width="12" height="22"></a></li>
-                <li class="links-item"><a href="#"><img src="img/insta-icon.png" alt="instagram" width="21" height="21"></a></li>
+                <li class="links-item"><a href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
+                <li class="links-item"><a href="#"><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>
+                <li class="links-item"><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li>
             </ul>
             <div class="friends">
                 <h3>Давайте дружить, это выгодно!</h3>
