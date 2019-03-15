@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'Arial', sans-serif;    
+    font-family: "Roboto", "Arial", sans-serif;    
     min-width: 1200px;
 }
 
@@ -79,6 +79,7 @@ p, h1, h2, h3, h4, ul, li {
     font-weight: 500;
     line-height: 55px;
     margin-top: 60px;
+    width: 520px;
 }
 
 .slide p {
@@ -86,6 +87,13 @@ p, h1, h2, h3, h4, ul, li {
     font-weight: 400;
     line-height: 24px;
     margin-top: 25px;
+    width: 415px;
+}
+
+.slide .slide-description {
+    margin: 15px 0 0 18px;
+    height: 430px;
+    width: 520px;
 }
 
 .slide1 {
@@ -160,33 +168,31 @@ input[type="radio"] {
     transform: scale(1);
 }
 
-.slide-description {
-    margin: 15px 0 0 18px;
-    height: 430px;
-    width: 520px;
-}
-
-.slide-description button:hover { 
+.learn-more:hover { 
     background: #e74246;
 }
 
-.slide-description button:focus {
+.learn-more:focus {
     background: #d7373b;
     color: #e37376;
 }
 
-.slide button {
+.learn-more {
     height: 50px;
     width: 240px;
     font-size: 16px;
+    line-height: 16px;
+    padding-top: 17px;
+    box-sizing: border-box;
     text-transform: uppercase;
     color: white;
     background: #fb565a;
     border-radius: 2px;
-    border: none;
+    text-align: center;
     cursor: pointer;
     margin-top: 40px;
     font-weight: 500;
+    display: block;
 }
 
 .slider-indicator {
@@ -253,7 +259,7 @@ a {
 }
 
 .offers a {
-    display: inline-block;
+    display: block;
     color: white;
     height: 50px;
     width: 160px;
@@ -673,7 +679,6 @@ a {
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
-    height: 231px;
 }
 
 .catalog-item-content h3 {
@@ -693,7 +698,7 @@ a {
     margin-bottom: 20px;
 }
 
-.catalog-item-content a {
+.catalog-item-content .worth {
     width: 200px;
     height: 50px;
     background-color: #fb565a;
@@ -705,7 +710,7 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 52px auto;
 }
 
 .catalog-item-content a:hover {
@@ -718,8 +723,7 @@ a {
 
 .catalog-item-pay {
     position: absolute;
-    top: 385px;
-    height: 231px;
+    bottom: 0;
     width: 360px;
     background-color: #efefef;
     z-index: 2;
@@ -744,6 +748,11 @@ a {
 
 .catalog-item:hover .catalog-item-brows {
     opacity: 1;   
+}
+
+.thin {
+    margin: 0 auto;
+    width: 190px;
 }
 
 .write-us {
@@ -1047,7 +1056,7 @@ a {
 }
 
 .adress-content {
-    width: 220px;
+    width: 215px;
     height: 308px;    
     background: white;
     position: absolute;
@@ -1131,11 +1140,12 @@ a {
 
 .select li {
     margin-top: 2px;
+    display: flex;
 }
 
-.select button:nth-child(1),
-.select button:nth-child(2),
-.select button:nth-child(3) {
+.select a:nth-child(1),
+.select a:nth-child(2),
+.select a:nth-child(3) {
     border: none;
     background-color:rgba(0, 0, 0, 0);
     text-transform: uppercase;
@@ -1145,19 +1155,20 @@ a {
     color: #b2b2b2;
 }
 
-.select button:hover:nth-child(1),
-.select button:hover:nth-child(2),
-.select button:hover:nth-child(3) {
+.select a:hover:nth-child(1),
+.select a:hover:nth-child(2),
+.select a:hover:nth-child(3) {
     color: #666666;
 }
 
-.select button:focus:nth-child(1),
-.select button:focus:nth-child(2),
-.select button:focus:nth-child(3) {
+.select a:focus:nth-child(1),
+.select a:focus:nth-child(2),
+.select a:focus:nth-child(3) {
     color: #000000;
 }
 
 .select .down {
+    display: block;
     width: 11px;
     height: 10px;
     background: url("../img/icon-down-dir.svg") no-repeat 50% 50%;
@@ -1167,6 +1178,7 @@ a {
 }
 
 .select .up {
+    display: block;
     width: 11px;
     height: 10px;
     background: url("../img/icon-up-dir.svg") no-repeat 50% 50%;
@@ -1244,22 +1256,27 @@ a {
     margin-top: 28px;
 }
 
-.selector-pages button {
+.selector-pages a {
     width: 50px;
     height: 50px;
     border: none;
     background-color: #eeeeee;
     text-transform: uppercase;
+    text-align: center;
     font-size: 16px;
+    line-height: 16px;
+    padding-top: 17px;
+    box-sizing: border-box;
     font-weight: 500;
     border-radius: 2px;
+    cursor: pointer;
 }
 
-.selector-pages button:hover {
+.selector-pages a:hover {
     background-color: #dfdfdf;
 }
 
-.selector-pages button:focus {
+.selector-pages a:focus {
     background-color: #d5d5d5;
     color: #b7b7b7;
 }
@@ -1268,8 +1285,9 @@ a {
     background-color: white;
     border: 3px solid #dbdbdb;
     box-sizing: border-box;
+    padding-top: 14px;
 }
 
-.selector-pages button:last-child {
+.selector-pages a:last-child {
     width: 260px;
 }

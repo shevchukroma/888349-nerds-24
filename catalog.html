@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
     <title>Nerds-catalog</title>
 </head>
@@ -80,11 +81,11 @@
                 <form action="https://echo.htmlacademy.ru" method="get" class="sorting-item">
                     <p class="send">Сортировать:</p>
                     <ul class="select">
-                        <li><button>По цене</button></li>
-                        <li><button>По типу</button></li>
-                        <li><button>По названию</button></li>
-                        <li><button class="down"></button></li>
-                        <li><button class="up"></button></li>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По названию</a></li>
+                        <li><a href="#" class="down"></a></li>
+                        <li><a href="#" class="up"></a></li>
                     </ul>
                 </form>
             </li>
@@ -93,9 +94,9 @@
                 <img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
                 <div class="catalog-item-pay">  
                     <div class="catalog-item-content">
-                        <h3>Sedona</h3>                 
-                        <p>Информационный сайт<br> для туристов</p> 
-                        <a href="#">9 900 руб.</a>
+                        <a href="#"><h3>Sedona</h3></a>                 
+                        <p class="thin">Информационный сайт для туристов</p> 
+                        <a href="#" class="worth">9 900 руб.</a>
                     </div>                        
                 </div>
             </li>
@@ -104,9 +105,9 @@
                 <img src="img/img-pink.jpg" alt="pink" width="360" height="576">
                 <div class="catalog-item-pay">
                     <div class="catalog-item-content">  
-                        <h3>Pink app</h3>                 
-                        <p>Продуктовый лендинг<br> приложения для iOS и Android</p> 
-                        <a href="#">9 900 руб.</a>
+                        <a href="#"><h3>Pink app</h3></a>                 
+                        <p>Продуктовый лендинг приложения для iOS и Android</p> 
+                        <a href="#" class="worth">9 900 руб.</a>
                     </div>
                 </div>
             </li>
@@ -115,9 +116,9 @@
                 <img src="img/img-barbershop.jpg" alt="borodinski" width="360" height="576">
                 <div class="catalog-item-pay">
                     <div class="catalog-item-content">  
-                        <h3>Barbershop</h3>                 
-                        <p>Сайт салона красоты.<br> Для мужчин, да.</p> 
-                        <a href="#">9 900 руб.</a>    
+                        <a href="#"><h3>Barbershop</h3></a>                 
+                        <p class="thin">Сайт салона красоты. Для мужчин, да.</p> 
+                        <a href="#" class="worth">9 900 руб.</a>    
                     </div>
                 </div>
             </li>
@@ -126,9 +127,9 @@
                 <img src="img/img-mishka.jpg" alt="mishka" width="360" height="576">
                 <div class="catalog-item-pay">
                     <div class="catalog-item-content">  
-                        <h3>Mishka</h3>                 
-                        <p>Интернет-магазин<br> вязаных игрушек</p> 
-                        <a href="#">9 900 руб.</a>        
+                        <a href="#"><h3>Mishka</h3></a>                 
+                        <p class="thin">Интернет-магазин вязаных игрушек</p> 
+                        <a href="#" class="worth">9 900 руб.</a>        
                     </div>                        
                 </div>
             </li>
@@ -137,9 +138,9 @@
                 <img src="img/img-aplus.jpg" alt="aplus" width="360" height="576">
                 <div class="catalog-item-pay">
                     <div class="catalog-item-content">    
-                        <h3>A plus</h3>                 
-                        <p>Лендинг курсов повышения<br> квалификации</p> 
-                        <a  href="#">9 900 руб.</a> 
+                        <a href="#"><h3>A plus</h3></a>                 
+                        <p>Лендинг курсов повышения квалификации</p> 
+                        <a href="#" class="worth">9 900 руб.</a> 
                     </div>
                 </div>
             </li>
@@ -148,17 +149,17 @@
                 <img src="img/img-kvast.jpg" alt="kvast" width="360" height="576">
                 <div class="catalog-item-pay">
                     <div class="catalog-item-content">
-                        <h3>Kvast</h3>                 
-                        <p>Промо-сайт производителя<br> крафтового кваса</p> 
-                        <a href="#">9 900 руб.</a>
+                        <a href="#"><h3>Kvast</h3></a>                 
+                        <p>Промо-сайт производителя крафтового кваса</p> 
+                        <a href="#" class="worth">9 900 руб.</a>
                     </div>
                 </div>
             </li>            
             <li class="selector-pages">
-                <button class="activity">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>Следующая</button>
+                <a class="activity">1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>Следующая</a>
             </li>
         </ul>         
     </main>
@@ -179,14 +180,14 @@
                     <label for="text-field">Текст письма:</label>
                     <textarea id="text-field" placeholder="В свободной форме"></textarea>
                     <button type="submit" value="Отправить">Отправить</button>
-                    <a href="#" class="modal-close">Закрыть</a>
+                    <a href="catalog.html" class="modal-close">Закрыть</a>
             </div>
             </form>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5866108211553!2d30.322332703446513!3d59.93900147851415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1551208869256" width="1440" height="416" style="border:0" allowfullscreen></iframe>
             <div class="marker"></div>
             <div class="adress-content">
                 <p>NЁRDS DESIGN STUDIO</p>
-                <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
                 <a href="#" class="link-on">Напишите нам</a>
             </div>                
